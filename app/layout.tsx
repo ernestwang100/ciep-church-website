@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CIEP Church — El Paso",
-  description: "Welcome to CIEP Church in El Paso. Join us for worship, community, and more.",
+  title: "The Church in El Paso",
+  description: "Welcome to The Church in El Paso. Join us for worship, community, and more.",
 };
 
 export default function RootLayout({

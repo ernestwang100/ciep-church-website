@@ -5,7 +5,7 @@ export default function Home() {
     <div>
       {/* Hero */}
       <section className="bg-gray-900 text-white py-24 px-4 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to CIEP Church</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to The Church in El Paso</h1>
         <p className="text-lg text-gray-300 mb-8 max-w-xl mx-auto">
           A community of faith in El Paso. Everyone is welcome here.
         </p>
@@ -43,7 +43,7 @@ export default function Home() {
       {/* Announcements preview */}
       <section className="py-16 px-4 bg-gray-50 text-center">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Latest Announcements</h2>
-        <p className="text-gray-500 mb-6">Stay up to date with what&apos;s happening at CIEP Church.</p>
+        <p className="text-gray-500 mb-6">Stay up to date with what&apos;s happening at The Church in El Paso.</p>
         <Link
           href="/announcements"
           className="inline-block bg-gray-900 text-white font-semibold px-6 py-3 rounded-full hover:bg-gray-700 transition-colors"

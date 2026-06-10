@@ -3,7 +3,7 @@ export default function Give() {
     <div className="max-w-2xl mx-auto px-4 py-16 text-center">
       <h1 className="text-3xl font-bold text-gray-900 mb-4">Give</h1>
       <p className="text-gray-600 mb-8">
-        Your generosity makes ministry possible. Thank you for partnering with CIEP Church to serve El Paso and beyond.
+        Your generosity makes ministry possible. Thank you for partnering with The Church in El Paso to serve El Paso and beyond.
       </p>
       <a
         href="#"
@@ -12,7 +12,7 @@ export default function Give() {
         Give Online
       </a>
       <p className="text-gray-400 text-sm mt-6">
-        You can also give in person during any service. Checks made payable to CIEP Church.
+        You can also give in person during any service. Checks made payable to The Church in El Paso.
       </p>
     </div>
   );

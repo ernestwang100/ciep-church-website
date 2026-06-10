@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-400 py-10 mt-auto">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-8">
         <div>
-          <p className="text-white font-semibold text-lg mb-1">CIEP Church</p>
+          <p className="text-white font-semibold text-lg mb-1">The Church in El Paso</p>
           <p className="text-sm">West: 305 Bird Ave, El Paso, TX 79922</p>
           <p className="text-sm">East: 11395 James Watt Dr STE A9, El Paso, TX 79936</p>
         </div>
@@ -26,7 +26,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 mt-8 pt-6 border-t border-gray-800 text-xs text-center">
-        © {new Date().getFullYear()} CIEP Church. All rights reserved.
+        © {new Date().getFullYear()} The Church in El Paso. All rights reserved.
       </div>
     </footer>
   );
