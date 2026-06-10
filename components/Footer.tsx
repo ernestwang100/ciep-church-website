@@ -6,7 +6,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-8">
         <div>
           <p className="text-white font-semibold text-lg mb-1">CIEP Church</p>
-          <p className="text-sm">El Paso, TX</p>
+          <p className="text-sm">West: 305 Bird Ave, El Paso, TX 79922</p>
+          <p className="text-sm">East: 11395 James Watt Dr STE A9, El Paso, TX 79936</p>
         </div>
 
         <div className="flex flex-col gap-1 text-sm">
