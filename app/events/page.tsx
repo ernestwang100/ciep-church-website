@@ -1,5 +1,6 @@
 import { client } from "@/sanity/client";
 import { eventsQuery } from "@/sanity/queries";
+import { siteConfig } from "@/lib/config";
 
 type Event = {
   _id: string;
@@ -19,7 +20,7 @@ export default async function Events() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold text-gray-900 mb-4">Events</h1>
-      <p className="text-gray-600 mb-10">Upcoming services, gatherings, and special events at The Church in El Paso.</p>
+      <p className="text-gray-600 mb-10">Upcoming services, gatherings, and special events at {siteConfig.name}.</p>
 
       <div className="space-y-6">
         {events.length === 0 && (

@@ -1,21 +1,4 @@
-const locations = [
-  {
-    name: "West — 305 Bird Ave",
-    address: "305 Bird Ave, El Paso, TX 79922",
-    mapSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3389.989174313424!2d-106.57727372342494!3d31.825287832012407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ddf8496da86b19%3A0x88240ff8ae933531!2sThe%20Church%20In%20El%20Paso!5e0!3m2!1sen!2sus!4v1781060176904!5m2!1sen!2sus",
-    directionsHref:
-      "https://www.google.com/maps/dir/?api=1&destination=305+Bird+Ave,+El+Paso,+TX+79922",
-  },
-  {
-    name: "East District — 11395 James Watt Dr STE A9",
-    address: "11395 James Watt Dr STE A9, El Paso, TX 79936",
-    mapSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.9972646568417!2d-106.31781813860337!3d31.74327563327974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e7438d17792c2f%3A0x880514d0d38630f1!2sThe%20Church%20in%20El%20Paso%20-%20East%20District!5e0!3m2!1sen!2sus!4v1781060117989!5m2!1sen!2sus",
-    directionsHref:
-      "https://www.google.com/maps/dir/?api=1&destination=11395+James+Watt+Dr+STE+A9,+El+Paso,+TX+79936",
-  },
-];
+import { siteConfig } from "@/lib/config";
 
 export default function PlanYourVisit() {
   return (
@@ -29,10 +12,10 @@ export default function PlanYourVisit() {
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Our Locations</h2>
           <div className="grid sm:grid-cols-2 gap-6">
-            {locations.map((loc) => (
-              <div key={loc.name} className="space-y-3">
-                <p className="font-medium text-gray-900">{loc.name}</p>
-                <p className="text-gray-600 text-sm">{loc.address}</p>
+            {siteConfig.locations.map((loc) => (
+              <div key={loc.label} className="space-y-3">
+                <p className="font-medium text-gray-900">{loc.label} — {loc.address}</p>
+                <p className="text-gray-600 text-sm">{loc.address}, {loc.city}</p>
                 <iframe
                   src={loc.mapSrc}
                   width="100%"
@@ -40,7 +23,7 @@ export default function PlanYourVisit() {
                   className="rounded-xl border border-gray-200"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title={loc.name}
+                  title={`${loc.label} location`}
                 />
                 <a
                   href={loc.directionsHref}
@@ -57,8 +40,9 @@ export default function PlanYourVisit() {
 
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-2">Service Times</h2>
-          <p className="text-gray-600">Sunday Service — 10:00 AM</p>
-          <p className="text-gray-600">Wednesday Bible Study — 7:00 PM</p>
+          {siteConfig.serviceTimes.map((st) => (
+            <p key={st.label} className="text-gray-600">{st.name} — {st.time}</p>
+          ))}
         </div>
 
         <div>

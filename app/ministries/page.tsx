@@ -1,5 +1,6 @@
 import { client } from "@/sanity/client";
 import { ministriesQuery } from "@/sanity/queries";
+import { siteConfig } from "@/lib/config";
 
 type Ministry = {
   _id: string;
@@ -29,7 +30,7 @@ export default async function Ministries() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold text-gray-900 mb-4">Ministries</h1>
-      <p className="text-gray-600 mb-10">Find your place at The Church in El Paso — there&apos;s a community for everyone.</p>
+      <p className="text-gray-600 mb-10">Find your place at {siteConfig.name} — there&apos;s a community for everyone.</p>
 
       <div className="grid gap-6 sm:grid-cols-2">
         {ministries.map((m) => (

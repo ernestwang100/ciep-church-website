@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { siteConfig } from "@/lib/config";
 
 const navLinks = [
   { href: "/visit", label: "Plan Your Visit" },
@@ -21,7 +22,7 @@ export default function Navbar() {
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         <Link href="/" className="font-bold text-xl text-gray-900">
-          The Church in El Paso
+          {siteConfig.name}
         </Link>
 
         {/* Desktop links */}

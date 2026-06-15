@@ -1,5 +1,6 @@
 import { client } from "@/sanity/client";
 import { announcementsQuery } from "@/sanity/queries";
+import { siteConfig } from "@/lib/config";
 
 type Announcement = {
   _id: string;
@@ -17,7 +18,7 @@ export default async function Announcements() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold text-gray-900 mb-4">Announcements</h1>
-      <p className="text-gray-600 mb-10">Stay up to date with everything happening at The Church in El Paso.</p>
+      <p className="text-gray-600 mb-10">Stay up to date with everything happening at {siteConfig.name}.</p>
 
       <div className="space-y-6">
         {announcements.length === 0 && (
