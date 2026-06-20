@@ -6,7 +6,7 @@ export const siteConfig = {
   email: "churchinelpaso@gmail.com",
   phone: "",
   serviceTimes: [
-    { label: "Sunday", name: "Sunday Service", time: "11:00 AM" },
+    { label: "Sunday", name: "Sunday Meetings", time: "11:00 AM" },
     { label: "Wednesday", name: "Wednesday Bible Study", time: "7:00 PM" },
   ],
   locations: [
