@@ -91,6 +91,10 @@
     "messagePlaceholder": "How can we help?",
     "sendButton": "Send Message"
   },
+  "serviceTimes": {
+    "Sunday": "Sunday Meetings",
+    "Wednesday": "Wednesday Bible Study"
+  },
   "footer": {
     "quickLinks": "Quick Links",
     "serviceTimes": "Service Times"

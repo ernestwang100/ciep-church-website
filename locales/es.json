@@ -91,6 +91,10 @@
     "messagePlaceholder": "¿Cómo podemos ayudarte?",
     "sendButton": "Enviar Mensaje"
   },
+  "serviceTimes": {
+    "Sunday": "Reuniones del Domingo",
+    "Wednesday": "Estudio Bíblico del Miércoles"
+  },
   "footer": {
     "quickLinks": "Enlaces Rápidos",
     "serviceTimes": "Horarios de Servicio"

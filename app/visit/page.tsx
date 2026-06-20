@@ -44,7 +44,7 @@ export default function PlanYourVisit() {
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-2">{t.visit.timesHeading}</h2>
           {siteConfig.serviceTimes.map((st) => (
-            <p key={st.label} className="text-gray-600">{st.name} — {st.time}</p>
+            <p key={st.label} className="text-gray-600">{t.serviceTimes[st.label as keyof typeof t.serviceTimes]} — {st.time}</p>
           ))}
         </div>
 

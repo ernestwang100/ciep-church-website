@@ -35,7 +35,7 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
           {siteConfig.serviceTimes.map((st) => (
             <div key={st.label} className="flex-1 border border-gray-200 rounded-xl p-6">
-              <p className="font-semibold text-gray-900 text-lg">{st.name}</p>
+              <p className="font-semibold text-gray-900 text-lg">{t.serviceTimes[st.label as keyof typeof t.serviceTimes]}</p>
               <p className="text-gray-500 mt-1">{st.time}</p>
             </div>
           ))}
