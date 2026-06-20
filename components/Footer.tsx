@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="flex flex-col gap-1 text-sm">
           <p className="text-white font-medium mb-1">{t.footer.quickLinks}</p>
           <Link href="/visit" className="hover:text-white transition-colors">{t.nav.visit}</Link>
-          <Link href="/sermons" className="hover:text-white transition-colors">{t.nav.resources}</Link>
+          <Link href="/resources" className="hover:text-white transition-colors">{t.nav.resources}</Link>
           <Link href="/give" className="hover:text-white transition-colors">{t.nav.give}</Link>
           <Link href="/contact" className="hover:text-white transition-colors">{t.nav.contact}</Link>
         </div>

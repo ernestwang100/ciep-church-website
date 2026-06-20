@@ -21,7 +21,7 @@ export default function Home() {
             {t.home.visitCTA}
           </Link>
           <Link
-            href="/sermons"
+            href="/resources"
             className="border border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-gray-900 transition-colors"
           >
             {t.home.sermonsCTA}
