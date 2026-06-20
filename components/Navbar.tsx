@@ -12,11 +12,11 @@ export default function Navbar() {
   const navLinks = [
     { href: "/visit", label: t.nav.visit },
     { href: "/about", label: t.nav.about },
-    { href: "/resources", label: t.nav.resources },
     { href: "/announcements", label: t.nav.announcements },
     { href: "/events", label: t.nav.events },
     { href: "/services", label: t.nav.services },
     { href: "/give", label: t.nav.give },
+    { href: "/resources", label: t.nav.resources },
     { href: "/contact", label: t.nav.contact },
   ];
 
