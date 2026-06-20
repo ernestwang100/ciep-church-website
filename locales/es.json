@@ -1,0 +1,98 @@
+{
+  "site": {
+    "name": "La Iglesia en El Paso"
+  },
+  "nav": {
+    "visit": "Planifica Tu Visita",
+    "about": "Quiénes Somos",
+    "resources": "Recursos",
+    "announcements": "Anuncios",
+    "events": "Eventos",
+    "services": "Servicios",
+    "give": "Ofrenda",
+    "contact": "Contacto"
+  },
+  "home": {
+    "heroTitle": "Bienvenido a La Iglesia en El Paso",
+    "heroSubtitle": "Una comunidad de fe en El Paso. Todos son bienvenidos.",
+    "visitCTA": "Planifica Tu Visita",
+    "sermonsCTA": "Ver Recursos",
+    "joinUsHeading": "Únete Con Nosotros Esta Semana",
+    "announcementsHeading": "Últimos Anuncios",
+    "announcementsSubtitle": "Mantente al día con lo que está pasando.",
+    "announcementsCTA": "Ver Todos los Anuncios"
+  },
+  "announcements": {
+    "title": "Anuncios",
+    "subtitle": "Mantente al día con todo lo que sucede en La Iglesia en El Paso.",
+    "empty": "No hay anuncios aún."
+  },
+  "events": {
+    "title": "Eventos",
+    "subtitle": "Próximos servicios, reuniones y eventos especiales.",
+    "empty": "No hay eventos próximos."
+  },
+  "resources": {
+    "title": "Recursos",
+    "subtitle": "Mira o escucha los mensajes recientes de La Iglesia en El Paso.",
+    "empty": "Recursos próximamente.",
+    "watch": "Ver",
+    "listen": "Escuchar"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Encuentra tu lugar — hay una comunidad para todos.",
+    "ledBy": "Dirigido por"
+  },
+  "visit": {
+    "title": "Planifica Tu Visita",
+    "subtitle": "Nos alegra que estés considerando unirte a nosotros. Aquí está todo lo que necesitas saber antes de venir.",
+    "locationsHeading": "Nuestras Ubicaciones",
+    "getDirections": "Obtener Indicaciones →",
+    "timesHeading": "Horarios de Servicio",
+    "expectHeading": "¿Qué Esperar?",
+    "expectBody": "Nuestros servicios duran aproximadamente 90 minutos e incluyen adoración, oración y un mensaje de la Biblia. Ven como eres — no hay código de vestimenta.",
+    "parkingHeading": "Estacionamiento",
+    "parkingBody": "Hay estacionamiento gratuito disponible en ambas ubicaciones.",
+    "kidsHeading": "Niños",
+    "kidsBody": "Tenemos programas para niños de todas las edades durante el servicio del domingo para que los padres puedan adorar sin distracciones.",
+    "questionsHeading": "¿Preguntas?",
+    "questionsPrefix": "No dudes en",
+    "contactUs": "contactarnos",
+    "questionsSuffix": "en cualquier momento — nos encantaría saber de ti."
+  },
+  "about": {
+    "title": "Quiénes Somos",
+    "subtitle": "Conoce quiénes somos, qué creemos y qué nos impulsa como comunidad de fe en El Paso.",
+    "storyHeading": "Nuestra Historia",
+    "storyBody": "[Historia de la iglesia — actualizar en Sanity]",
+    "beliefsHeading": "Lo Que Creemos",
+    "beliefsBody": "[Declaración de fe — actualizar en Sanity]",
+    "teamHeading": "Nuestro Equipo"
+  },
+  "give": {
+    "title": "Ofrenda",
+    "subtitle": "Tu generosidad hace posible el ministerio. Gracias por asociarte con La Iglesia en El Paso para servir a El Paso y más allá.",
+    "onlineCTA": "Dar en Línea",
+    "inPerson": "También puedes dar en persona durante cualquier servicio. Cheques a nombre de La Iglesia en El Paso."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Nos encantaría saber de ti. Comunícate en cualquier momento.",
+    "timesHeading": "Horarios de Servicio",
+    "phoneHeading": "Teléfono",
+    "emailHeading": "Correo Electrónico",
+    "getDirections": "Obtener Indicaciones →",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo Electrónico",
+    "emailPlaceholder": "tu@correo.com",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "¿Cómo podemos ayudarte?",
+    "sendButton": "Enviar Mensaje"
+  },
+  "footer": {
+    "quickLinks": "Enlaces Rápidos",
+    "serviceTimes": "Horarios de Servicio"
+  }
+}

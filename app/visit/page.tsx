@@ -1,16 +1,19 @@
+"use client";
+
 import { siteConfig } from "@/lib/config";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function PlanYourVisit() {
+  const { t } = useLanguage();
+
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
-      <h1 className="text-3xl font-bold text-gray-900 mb-4">Plan Your Visit</h1>
-      <p className="text-gray-600 mb-10">
-        We&apos;re glad you&apos;re considering joining us. Here&apos;s everything you need to know before you come.
-      </p>
+      <h1 className="text-3xl font-bold text-gray-900 mb-4">{t.visit.title}</h1>
+      <p className="text-gray-600 mb-10">{t.visit.subtitle}</p>
 
       <div className="space-y-10">
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Our Locations</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">{t.visit.locationsHeading}</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {siteConfig.locations.map((loc) => (
               <div key={loc.label} className="space-y-3">
@@ -31,7 +34,7 @@ export default function PlanYourVisit() {
                   rel="noopener noreferrer"
                   className="inline-block text-sm font-medium text-gray-900 underline hover:no-underline"
                 >
-                  Get Directions →
+                  {t.visit.getDirections}
                 </a>
               </div>
             ))}
@@ -39,40 +42,35 @@ export default function PlanYourVisit() {
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">Service Times</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">{t.visit.timesHeading}</h2>
           {siteConfig.serviceTimes.map((st) => (
             <p key={st.label} className="text-gray-600">{st.name} — {st.time}</p>
           ))}
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">What to Expect</h2>
-          <p className="text-gray-600">
-            Our services last about 90 minutes and include worship, prayer, and a message from the Bible.
-            Come as you are — there is no dress code.
-          </p>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">{t.visit.expectHeading}</h2>
+          <p className="text-gray-600">{t.visit.expectBody}</p>
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">Parking</h2>
-          <p className="text-gray-600">Free parking is available at both locations.</p>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">{t.visit.parkingHeading}</h2>
+          <p className="text-gray-600">{t.visit.parkingBody}</p>
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">Kids</h2>
-          <p className="text-gray-600">
-            We have programs for children of all ages during the Sunday service so parents can worship without distraction.
-          </p>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">{t.visit.kidsHeading}</h2>
+          <p className="text-gray-600">{t.visit.kidsBody}</p>
         </div>
 
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">Questions?</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">{t.visit.questionsHeading}</h2>
           <p className="text-gray-600">
-            Feel free to{" "}
+            {t.visit.questionsPrefix}{" "}
             <a href="/contact" className="underline text-gray-900">
-              contact us
+              {t.visit.contactUs}
             </a>{" "}
-            anytime — we&apos;d love to hear from you.
+            {t.visit.questionsSuffix}
           </p>
         </div>
       </div>

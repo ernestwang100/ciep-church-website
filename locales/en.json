@@ -1,0 +1,98 @@
+{
+  "site": {
+    "name": "The Church in El Paso"
+  },
+  "nav": {
+    "visit": "Plan Your Visit",
+    "about": "About",
+    "resources": "Resources",
+    "announcements": "Announcements",
+    "events": "Events",
+    "services": "Services",
+    "give": "Offering",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "Welcome to The Church in El Paso",
+    "heroSubtitle": "A community of faith in El Paso. Everyone is welcome here.",
+    "visitCTA": "Plan Your Visit",
+    "sermonsCTA": "Watch Resources",
+    "joinUsHeading": "Join Us This Week",
+    "announcementsHeading": "Latest Announcements",
+    "announcementsSubtitle": "Stay up to date with what's happening.",
+    "announcementsCTA": "View All Announcements"
+  },
+  "announcements": {
+    "title": "Announcements",
+    "subtitle": "Stay up to date with everything happening at The Church in El Paso.",
+    "empty": "No announcements yet."
+  },
+  "events": {
+    "title": "Events",
+    "subtitle": "Upcoming services, gatherings, and special events.",
+    "empty": "No upcoming events."
+  },
+  "resources": {
+    "title": "Resources",
+    "subtitle": "Watch or listen to recent messages from The Church in El Paso.",
+    "empty": "Resources coming soon.",
+    "watch": "Watch",
+    "listen": "Listen"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Find your place — there's a community for everyone.",
+    "ledBy": "Led by"
+  },
+  "visit": {
+    "title": "Plan Your Visit",
+    "subtitle": "We're glad you're considering joining us. Here's everything you need to know before you come.",
+    "locationsHeading": "Our Locations",
+    "getDirections": "Get Directions →",
+    "timesHeading": "Service Times",
+    "expectHeading": "What to Expect",
+    "expectBody": "Our services last about 90 minutes and include worship, prayer, and a message from the Bible. Come as you are — there is no dress code.",
+    "parkingHeading": "Parking",
+    "parkingBody": "Free parking is available at both locations.",
+    "kidsHeading": "Kids",
+    "kidsBody": "We have programs for children of all ages during the Sunday service so parents can worship without distraction.",
+    "questionsHeading": "Questions?",
+    "questionsPrefix": "Feel free to",
+    "contactUs": "contact us",
+    "questionsSuffix": "anytime — we'd love to hear from you."
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Learn who we are, what we believe, and what drives us as a community of faith in El Paso.",
+    "storyHeading": "Our Story",
+    "storyBody": "[Church history — update in Sanity]",
+    "beliefsHeading": "What We Believe",
+    "beliefsBody": "[Statement of faith — update in Sanity]",
+    "teamHeading": "Our Team"
+  },
+  "give": {
+    "title": "Offering",
+    "subtitle": "Your generosity makes ministry possible. Thank you for partnering with The Church in El Paso to serve El Paso and beyond.",
+    "onlineCTA": "Give Online",
+    "inPerson": "You can also give in person during any service. Checks made payable to The Church in El Paso."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We'd love to hear from you. Reach out anytime.",
+    "timesHeading": "Service Times",
+    "phoneHeading": "Phone",
+    "emailHeading": "Email",
+    "getDirections": "Get Directions →",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "How can we help?",
+    "sendButton": "Send Message"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "serviceTimes": "Service Times"
+  }
+}

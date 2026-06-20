@@ -2,27 +2,29 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { siteConfig } from "@/lib/config";
-
-const navLinks = [
-  { href: "/visit", label: "Plan Your Visit" },
-  { href: "/about", label: "About" },
-  { href: "/sermons", label: "Sermons" },
-  { href: "/announcements", label: "Announcements" },
-  { href: "/events", label: "Events" },
-  { href: "/ministries", label: "Ministries" },
-  { href: "/give", label: "Give" },
-  { href: "/contact", label: "Contact" },
-];
+import LanguageToggle from "./LanguageToggle";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useLanguage();
+
+  const navLinks = [
+    { href: "/visit", label: t.nav.visit },
+    { href: "/about", label: t.nav.about },
+    { href: "/sermons", label: t.nav.resources },
+    { href: "/announcements", label: t.nav.announcements },
+    { href: "/events", label: t.nav.events },
+    { href: "/ministries", label: t.nav.services },
+    { href: "/give", label: t.nav.give },
+    { href: "/contact", label: t.nav.contact },
+  ];
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-        <Link href="/" className="font-bold text-xl text-gray-900">
-          {siteConfig.name}
+        <Link href="/" className="font-bold text-xl text-primary">
+          {t.site.name}
         </Link>
 
         {/* Desktop links */}
@@ -34,18 +36,24 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          <li>
+            <LanguageToggle />
+          </li>
         </ul>
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden p-2 rounded text-gray-600 hover:text-gray-900"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className="block w-5 h-0.5 bg-current mb-1" />
-          <span className="block w-5 h-0.5 bg-current mb-1" />
-          <span className="block w-5 h-0.5 bg-current" />
-        </button>
+        {/* Mobile right side */}
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageToggle />
+          <button
+            className="p-2 rounded text-gray-600 hover:text-gray-900"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className="block w-5 h-0.5 bg-current mb-1" />
+            <span className="block w-5 h-0.5 bg-current mb-1" />
+            <span className="block w-5 h-0.5 bg-current" />
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}

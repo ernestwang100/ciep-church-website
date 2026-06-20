@@ -1,3 +1,5 @@
+export const themeColor = "#F58320";
+
 export const siteConfig = {
   name: "The Church in El Paso",
   tagline: "A community of faith in El Paso. Everyone is welcome here.",
