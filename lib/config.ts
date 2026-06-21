@@ -3,7 +3,7 @@ export const themeColor = "#F58320";
 export const siteConfig = {
   name: "The Church in El Paso",
   tagline: "A community of faith in El Paso. Everyone is welcome here.",
-  email: "churchinelpaso@gmail.com",
+  email: "churchinep@gmail.com",
   phone: "",
   serviceTimes: [
     { label: "Sunday", name: "Sunday Meetings", time: "11:00 AM" },
