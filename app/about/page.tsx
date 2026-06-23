@@ -17,7 +17,7 @@ export type AboutPageData = {
   beliefsBody_es?: string;
 };
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 export default async function About() {
   const [staff, aboutData] = await Promise.all([

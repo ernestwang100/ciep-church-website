@@ -1,8 +1,8 @@
 import { client } from "@/sanity/client";
-import { ministriesQuery } from "@/sanity/queries";
+import { servicesQuery } from "@/sanity/queries";
 import MinistriesList from "@/components/MinistriesList";
 
-type Ministry = {
+type Service = {
   _id: string;
   name: string;
   description: string;
@@ -11,7 +11,7 @@ type Ministry = {
   imageUrl: string;
 };
 
-const fallbackMinistries: Ministry[] = [
+const fallbackServices: Service[] = [
   { _id: "1", name: "Children", description: "Programs for kids of all ages to grow in faith.", leader: "", contactEmail: "", imageUrl: "" },
   { _id: "2", name: "Youth / Teenagers", description: "A space for teens to connect, grow, and lead.", leader: "", contactEmail: "", imageUrl: "" },
   { _id: "3", name: "College Students", description: "Community and discipleship for young adults.", leader: "", contactEmail: "", imageUrl: "" },
@@ -21,10 +21,10 @@ const fallbackMinistries: Ministry[] = [
   { _id: "7", name: "Outreach", description: "Serving El Paso and beyond with hands and heart.", leader: "", contactEmail: "", imageUrl: "" },
 ];
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
-export default async function Ministries() {
-  const fetched: Ministry[] = await client.fetch(ministriesQuery);
-  const ministries = fetched.length > 0 ? fetched : fallbackMinistries;
-  return <MinistriesList items={ministries} />;
+export default async function Services() {
+  const fetched: Service[] = await client.fetch(servicesQuery);
+  const services = fetched.length > 0 ? fetched : fallbackServices;
+  return <MinistriesList items={services} />;
 }

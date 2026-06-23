@@ -26,6 +26,15 @@ export const ministriesQuery = groq`
   }
 `;
 
+export const servicesQuery = groq`
+  *[_type == "service"] | order(ageGroup asc) {
+    _id,
+    "name": title,
+    description,
+    "imageUrl": image.asset->url
+  }
+`;
+
 export const staffQuery = groq`
   *[_type == "staff"] | order(order asc) {
     _id, name, title, bio,
