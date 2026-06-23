@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
+import type { AboutPageData } from "@/app/about/page";
 
 type Staff = {
   _id: string;
@@ -10,8 +11,22 @@ type Staff = {
   photoUrl: string;
 };
 
-export default function AboutContent({ staff }: { staff: Staff[] }) {
-  const { t } = useLanguage();
+export default function AboutContent({
+  staff,
+  aboutData,
+}: {
+  staff: Staff[];
+  aboutData: AboutPageData | null;
+}) {
+  const { lang, t } = useLanguage();
+
+  const storyBody =
+    (lang === "es" ? aboutData?.storyBody_es : aboutData?.storyBody_en) ||
+    t.about.storyBody;
+
+  const beliefsBody =
+    (lang === "es" ? aboutData?.beliefsBody_es : aboutData?.beliefsBody_en) ||
+    t.about.beliefsBody;
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
@@ -21,12 +36,12 @@ export default function AboutContent({ staff }: { staff: Staff[] }) {
       <div className="space-y-10">
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-2">{t.about.storyHeading}</h2>
-          <p className="text-gray-600">{t.about.storyBody}</p>
+          <p className="text-gray-600">{storyBody}</p>
         </div>
 
         <div>
           <h2 className="text-xl font-semibold text-gray-900 mb-2">{t.about.beliefsHeading}</h2>
-          <p className="text-gray-600">{t.about.beliefsBody}</p>
+          <p className="text-gray-600">{beliefsBody}</p>
         </div>
 
         {staff.length > 0 && (

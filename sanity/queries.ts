@@ -32,3 +32,10 @@ export const staffQuery = groq`
     "photoUrl": photo.asset->url
   }
 `;
+
+export const aboutPageQuery = groq`
+  *[_type == "aboutPage"][0] {
+    storyBody_en, storyBody_es,
+    beliefsBody_en, beliefsBody_es
+  }
+`;
