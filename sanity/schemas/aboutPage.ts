@@ -4,8 +4,6 @@ export default defineType({
   name: "aboutPage",
   title: "About Page",
   type: "document",
-  // Singleton — only one document should exist
-  __experimental_actions: ["update", "publish"],
   fields: [
     defineField({
       name: "storyBody_en",
