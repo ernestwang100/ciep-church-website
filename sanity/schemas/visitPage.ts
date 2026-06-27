@@ -44,6 +44,11 @@ export default defineType({
       ],
     }),
     defineField({
+      name: "email",
+      title: "Contact Email",
+      type: "string",
+    }),
+    defineField({
       name: "expectBody_en",
       title: "What to Expect (English)",
       type: "text",

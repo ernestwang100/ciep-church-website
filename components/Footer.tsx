@@ -4,22 +4,46 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/config";
 import { useLanguage } from "@/context/LanguageContext";
 
-export default function Footer() {
-  const { t } = useLanguage();
+export type FooterData = {
+  email?: string;
+  locations?: { label: string; address: string; city: string }[];
+  serviceTimes?: { name_en: string; name_es: string; time: string }[];
+};
+
+export default function Footer({ data }: { data?: FooterData | null }) {
+  const { lang, t } = useLanguage();
+
+  const locations =
+    data?.locations && data.locations.length > 0
+      ? data.locations
+      : siteConfig.locations;
+
+  const email = data?.email || siteConfig.email;
+
+  const serviceTimes =
+    data?.serviceTimes && data.serviceTimes.length > 0
+      ? data.serviceTimes.map((st) => ({
+          name: (lang === "es" ? st.name_es : st.name_en) || st.name_en,
+          time: st.time,
+        }))
+      : siteConfig.serviceTimes.map((st) => ({
+          name: t.serviceTimes[st.label as keyof typeof t.serviceTimes],
+          time: st.time,
+        }));
 
   return (
     <footer className="bg-gray-900 text-gray-400 py-10 mt-auto">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-8">
         <div>
           <p className="text-white font-semibold text-lg mb-1">{t.site.name}</p>
-          {siteConfig.locations.map((loc) => (
+          {locations.map((loc) => (
             <p key={loc.label} className="text-sm">
               {loc.label}: {loc.address}, {loc.city}
             </p>
           ))}
-          {siteConfig.email && (
-            <a href={`mailto:${siteConfig.email}`} className="text-sm hover:text-white transition-colors">
-              {siteConfig.email}
+          {email && (
+            <a href={`mailto:${email}`} className="text-sm hover:text-white transition-colors">
+              {email}
             </a>
           )}
         </div>
@@ -34,8 +58,8 @@ export default function Footer() {
 
         <div className="text-sm">
           <p className="text-white font-medium mb-1">{t.footer.serviceTimes}</p>
-          {siteConfig.serviceTimes.map((st) => (
-            <p key={st.label}>{st.label} — {st.time}</p>
+          {serviceTimes.map((st) => (
+            <p key={st.name}>{st.name} — {st.time}</p>
           ))}
         </div>
       </div>

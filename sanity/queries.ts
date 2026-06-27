@@ -51,6 +51,7 @@ export const aboutPageQuery = groq`
 
 export const visitPageQuery = groq`
   *[_type == "visitPage"][0] {
+    email,
     serviceTimes[] { name_en, name_es, time },
     locations[] { label, address, city, mapSrc, directionsHref },
     expectBody_en, expectBody_es,
@@ -61,6 +62,14 @@ export const visitPageQuery = groq`
 
 export const homeServiceTimesQuery = groq`
   *[_type == "visitPage"][0] {
+    serviceTimes[] { name_en, name_es, time }
+  }
+`;
+
+export const footerQuery = groq`
+  *[_type == "visitPage"][0] {
+    email,
+    locations[] { label, address, city },
     serviceTimes[] { name_en, name_es, time }
   }
 `;
