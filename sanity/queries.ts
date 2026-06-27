@@ -48,3 +48,26 @@ export const aboutPageQuery = groq`
     beliefsBody_en, beliefsBody_es
   }
 `;
+
+export const visitPageQuery = groq`
+  *[_type == "visitPage"][0] {
+    serviceTimes[] { name_en, name_es, time },
+    locations[] { label, address, city, mapSrc, directionsHref },
+    expectBody_en, expectBody_es,
+    parkingBody_en, parkingBody_es,
+    kidsBody_en, kidsBody_es
+  }
+`;
+
+export const homeServiceTimesQuery = groq`
+  *[_type == "visitPage"][0] {
+    serviceTimes[] { name_en, name_es, time }
+  }
+`;
+
+export const homePageQuery = groq`
+  *[_type == "homePage"][0] {
+    heroTitle_en, heroTitle_es,
+    heroSubtitle_en, heroSubtitle_es
+  }
+`;
