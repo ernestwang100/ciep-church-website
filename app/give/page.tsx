@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { QRCodeSVG } from "qrcode.react";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteConfig } from "@/lib/config";
 
@@ -27,12 +27,12 @@ export default function Give() {
         <p className="text-gray-600 text-sm mb-6">{t.give.zelleInstructions}</p>
 
         <div className="flex justify-center mb-6">
-          <QRCodeSVG
-            value={siteConfig.email}
-            size={160}
-            bgColor="#ffffff"
-            fgColor="#111827"
-            level="M"
+          <Image
+            src="/zelle-qr.png"
+            alt="Zelle QR code"
+            width={200}
+            height={200}
+            className="rounded-lg"
           />
         </div>
 
