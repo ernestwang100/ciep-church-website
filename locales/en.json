@@ -72,9 +72,12 @@
   },
   "give": {
     "title": "Offering",
-    "subtitle": "Your generosity makes ministry possible. Thank you for partnering with The Church in El Paso to serve El Paso and beyond.",
-    "onlineCTA": "Give Online",
-    "inPerson": "You can also give in person during any service. Checks made payable to The Church in El Paso."
+    "subtitle": "Your generosity makes ministry possible. Thank you for partnering with us to serve El Paso and beyond.",
+    "zelleHeading": "Give via Zelle",
+    "zelleInstructions": "Open Zelle in your banking app and send to:",
+    "copyLabel": "Copy",
+    "copiedLabel": "Copied!",
+    "inPerson": "You can also give in person during any meeting."
   },
   "contact": {
     "title": "Contact",

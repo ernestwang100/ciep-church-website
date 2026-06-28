@@ -72,9 +72,12 @@
   },
   "give": {
     "title": "Ofrenda",
-    "subtitle": "Tu generosidad hace posible el ministerio. Gracias por asociarte con La Iglesia en El Paso para servir a El Paso y más allá.",
-    "onlineCTA": "Dar en Línea",
-    "inPerson": "También puedes dar en persona durante cualquier servicio. Cheques a nombre de La Iglesia en El Paso."
+    "subtitle": "Tu generosidad hace posible el ministerio. Gracias por asociarte con nosotros para servir a El Paso y más allá.",
+    "zelleHeading": "Da por Zelle",
+    "zelleInstructions": "Abre Zelle en tu aplicación bancaria y envía a:",
+    "copyLabel": "Copiar",
+    "copiedLabel": "¡Copiado!",
+    "inPerson": "También puedes dar en persona durante cualquier reunión."
   },
   "contact": {
     "title": "Contacto",
