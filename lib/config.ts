@@ -4,6 +4,8 @@ export const siteConfig = {
   name: "The Church in El Paso",
   tagline: "A community of faith in El Paso. Everyone is welcome here.",
   email: "churchinep@gmail.com",
+  zelleLink:
+    "https://enroll.zellepay.com/qr-codes/?data=eyJuYW1lIjoiVEhFIExPQ0FMIENIVVJDSCBJTiBFTCBQQVNPIENPUlAiLCJ0b2tlbiI6ImNodXJjaGluZXBAZ21haWwuY29tIiwiYWN0aW9uIjoicGF5bWVudCJ9",
   phone: "",
   serviceTimes: [
     { label: "Sunday", name: "Sunday Meetings", time: "11:00 AM" },

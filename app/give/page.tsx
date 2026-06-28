@@ -36,6 +36,15 @@ export default function Give() {
           />
         </div>
 
+        <a
+          href={siteConfig.zelleLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full bg-[#6d1ed4] text-white text-sm font-semibold py-3 rounded-xl mb-4 hover:bg-[#5a18b0] transition-colors"
+        >
+          Pay with Zelle
+        </a>
+
         <div className="flex items-center justify-between gap-3 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3">
           <span className="font-mono text-gray-900 text-sm">{siteConfig.email}</span>
           <button
