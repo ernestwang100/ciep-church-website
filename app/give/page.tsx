@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { QRCodeSVG } from "qrcode.react";
 import { useLanguage } from "@/context/LanguageContext";
 import { siteConfig } from "@/lib/config";
 
@@ -23,7 +24,18 @@ export default function Give() {
         <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-1">
           {t.give.zelleHeading}
         </p>
-        <p className="text-gray-600 text-sm mb-4">{t.give.zelleInstructions}</p>
+        <p className="text-gray-600 text-sm mb-6">{t.give.zelleInstructions}</p>
+
+        <div className="flex justify-center mb-6">
+          <QRCodeSVG
+            value={siteConfig.email}
+            size={160}
+            bgColor="#ffffff"
+            fgColor="#111827"
+            level="M"
+          />
+        </div>
+
         <div className="flex items-center justify-between gap-3 bg-gray-50 border border-gray-200 rounded-xl px-4 py-3">
           <span className="font-mono text-gray-900 text-sm">{siteConfig.email}</span>
           <button
