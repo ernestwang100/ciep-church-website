@@ -7,7 +7,7 @@ export default defineType({
   fields: [
     defineField({
       name: "serviceTimes",
-      title: "Service Times",
+      title: "Meeting Times",
       type: "array",
       of: [
         {

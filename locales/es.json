@@ -49,7 +49,7 @@
     "subtitle": "Nos alegra que estés considerando unirte a nosotros. Aquí está todo lo que necesitas saber antes de venir.",
     "locationsHeading": "Nuestras Ubicaciones",
     "getDirections": "Obtener Indicaciones →",
-    "timesHeading": "Horarios de Servicio",
+    "timesHeading": "Horarios de Reunión",
     "expectHeading": "¿Qué Esperar?",
     "expectBody": "Nuestros servicios duran aproximadamente 90 minutos e incluyen adoración, oración y un mensaje de la Biblia. Ven como eres — no hay código de vestimenta.",
     "parkingHeading": "Estacionamiento",
@@ -79,7 +79,7 @@
   "contact": {
     "title": "Contacto",
     "subtitle": "Nos encantaría saber de ti. Comunícate en cualquier momento.",
-    "timesHeading": "Horarios de Servicio",
+    "timesHeading": "Horarios de Reunión",
     "phoneHeading": "Teléfono",
     "emailHeading": "Correo Electrónico",
     "getDirections": "Obtener Indicaciones →",
@@ -97,6 +97,6 @@
   },
   "footer": {
     "quickLinks": "Enlaces Rápidos",
-    "serviceTimes": "Horarios de Servicio"
+    "serviceTimes": "Horarios de Reunión"
   }
 }

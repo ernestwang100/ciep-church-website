@@ -49,7 +49,7 @@
     "subtitle": "We're glad you're considering joining us. Here's everything you need to know before you come.",
     "locationsHeading": "Our Locations",
     "getDirections": "Get Directions →",
-    "timesHeading": "Service Times",
+    "timesHeading": "Meeting Times",
     "expectHeading": "What to Expect",
     "expectBody": "Our services last about 90 minutes and include worship, prayer, and a message from the Bible. Come as you are — there is no dress code.",
     "parkingHeading": "Parking",
@@ -79,7 +79,7 @@
   "contact": {
     "title": "Contact",
     "subtitle": "We'd love to hear from you. Reach out anytime.",
-    "timesHeading": "Service Times",
+    "timesHeading": "Meeting Times",
     "phoneHeading": "Phone",
     "emailHeading": "Email",
     "getDirections": "Get Directions →",
@@ -97,6 +97,6 @@
   },
   "footer": {
     "quickLinks": "Quick Links",
-    "serviceTimes": "Service Times"
+    "serviceTimes": "Meeting Times"
   }
 }
